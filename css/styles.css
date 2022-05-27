@@ -53,10 +53,8 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-    
-
 }
+
 /*===HEADER===*/
 .page-header {
     border-bottom: 1px solid #ECECEC;
@@ -114,7 +112,6 @@ body {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
 }
 .header-mail {
     margin-right: 50px;
@@ -126,8 +123,7 @@ body {
     letter-spacing: 0.02em;
     color: #757575;
 
-    display: block;
-    
+    display: block;  
 }
 
 .tel {
@@ -149,8 +145,6 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
     url("/html/images/main-img.jpg");
     background-size: cover;
-
-
 }
 .main-title {
     font-weight: 900;
@@ -192,8 +186,7 @@ body {
     padding-bottom: 94px;
 }
 .skills-container {
-    display: flex;
-    
+    display: flex;  
 }
 .title-skills {
     font-weight: 700;
@@ -218,19 +211,21 @@ body {
 }
 .feature-list {
     display: flex;
+    align-items: center;
     justify-content: center;
-
 }
-.feature-icon-container {
+.feature-item {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+
     width: 270px;
     height: 120px;
-    background-color: tomato;
+    background-color: #E5E5E5;
 }
-.feature-list:not(:last-child) {
-    margin-left: 30px;
+.feature-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 /*===/Приемущества===*/
@@ -248,8 +243,7 @@ body {
     padding-bottom: 94px;
 }
 .work-container {
-    display: flex;
-        
+    display: flex;     
 }
 .work-card:not(:last-child) {
     margin-right: 30px;
@@ -274,10 +268,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;   
 }
-
 .div-img {
-    padding: 30px 10px;
-    
+    padding: 30px 10px;  
 }
 .title-team-img {
     font-weight: 500;
@@ -307,12 +299,8 @@ body {
     display: flex;
     justify-content: center;
 }
-
 .social-item:not(:last-child) {
     margin-right: 10px;
-}
-.social-icon {
-    fill: #AFB1B8;
 }
 .social-link {
     display: flex;
@@ -327,14 +315,18 @@ body {
 .social-link:focus {
     background-color: var(--hightlight-color);
 }
+.social-icon {
+    fill: #AFB1B8;
+}
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
     fill: #FFFFFF;
 }
 /*===/Наша команда===*/
+
 /*===Постоянные клиенты===*/
 .client-section {
-    background: #F5F4FA;
+    
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -343,11 +335,46 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
-    
+    letter-spacing: 0.03em;   
     color: #212121;
+    margin-bottom: 50px;
+}
+.client-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.client-item {
+    display: flex;
+}
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.client-item:not(:last-child) {
+    margin-right: 30px;
+}
+.client-icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+    fill: var(--hightlight-color);
+}
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--hightlight-color);
+}
 /*===/Постоянные клиенты===*/
 
 /*===Footer===*/
