@@ -216,6 +216,23 @@ body {
 .skills-item:not(:last-child) {
     margin-right: 30px;
 }
+.feature-list {
+    display: flex;
+    justify-content: center;
+
+}
+.feature-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: tomato;
+}
+.feature-list:not(:last-child) {
+    margin-left: 30px;
+}
+
 /*===/Приемущества===*/
 
 /*===Деятельность===*/
@@ -289,11 +306,13 @@ body {
 .social-list {
     display: flex;
     justify-content: center;
-
 }
+
 .social-item:not(:last-child) {
     margin-right: 10px;
-
+}
+.social-icon {
+    fill: #AFB1B8;
 }
 .social-link {
     display: flex;
@@ -304,30 +323,32 @@ body {
     border-radius: 50%;
     background-color: #FFFFFF;
 }
-
-/*.social-link:hover,
-.social-link:focus {
-    background-color: var(--hightlight-color);
-   
-}
-.social-icon,
-.social-icon {
-    fill: #FFFFFF;
-    
-}*/
-
 .social-link:hover,
 .social-link:focus {
     background-color: var(--hightlight-color);
-    color: #FFFFFF;
 }
-
-.social-link:hover .social-icon {
-    fill: tomato;
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: #FFFFFF;
 }
-
-
 /*===/Наша команда===*/
+/*===Постоянные клиенты===*/
+.client-section {
+    background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.title-client {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+}
+
+/*===/Постоянные клиенты===*/
 
 /*===Footer===*/
 .foter-section {
