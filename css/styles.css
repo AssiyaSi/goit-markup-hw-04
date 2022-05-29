@@ -39,7 +39,7 @@ img {
 .main-button:focus {
     background-color: #188CE8;
 }
-.curent.menu-nav {
+.curent .menu-nav {
     color: var(--hightlight-color);
 }
 body {
@@ -173,12 +173,20 @@ body {
 
 /*===Главная===*/
 .main-section {
-    background: #2F303A;
-    padding: 200px 0;
+    background-color: #2F303A;
+    padding: 200px 0;  
+    
+    max-width: 1600px;
+    max-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-    url("/html/images/main-img.jpg");
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../html/images/main-img.jpg");
     background-size: cover;
+    background-position: center;
+     
 }
 .main-title {
     font-weight: 900;
@@ -244,12 +252,8 @@ body {
 .skills-item:not(:last-child) {
     margin-right: 30px;
 }
-.feature-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.feature-item {
+
+.feature-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,10 +261,14 @@ body {
 
     width: 270px;
     height: 120px;
-    background-color: #E5E5E5;
+    background-color: #F5F4FA;
 }
-.feature-item:not(:last-child) {
+.feature-container:not(:last-child) {
     margin-right: 30px;
+}
+.feature-icon {
+    display: block;
+    background-position: center;
 }
 
 /*===/Приемущества===*/
@@ -414,7 +422,7 @@ body {
 
 /*===Footer===*/
 .footer-section {
-    display: flex;
+    
     background: #2F303A;
     padding: 60px 0;
 }
@@ -456,7 +464,7 @@ body {
     color: #FFFFFF;
     display: flex;
 
-    margin-top: 15px;
+    
     margin-bottom: 20px;
 }
 .addres-container {
@@ -548,7 +556,7 @@ body {
     background-color: var(--hightlight-color);
     color: var(--second-hightlight-color);
     border: solid var(--hightlight-color);
-    border-radius: 4px;
+    
 }
 /*===Проекты===*/
 .title-projects {
@@ -573,12 +581,9 @@ color: var(--description-color);
 }
 .portfolio-projects-item {
     margin-bottom: 30px;
-    background: #FFFFFF;
-    
+    background: #FFFFFF;   
 }
-/*.portfolio-projects-item:not(:nth-child(6n)) {
-    margin-bottom: 0;
-}*/
+
 .portfolio-projects-container .portfolio-projects-item:not(:nth-last-child(n + 4)) {
     margin-bottom: 0;
 }
@@ -587,8 +592,12 @@ color: var(--description-color);
 }
 .div-projects {
     padding: 20px 24px;
-
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+}
+.portfolio-projects-link:hover,
+.portfolio-projects-link:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
